@@ -4,6 +4,8 @@ pipeline {
 		stage('Build') {
 			steps {
 				echo "Build"
+				echo "$PATH"
+				echo "$env.JOB_NAME"
 			}
 		}
 		stage('Test') {
